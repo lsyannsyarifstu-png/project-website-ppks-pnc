@@ -148,3 +148,22 @@ document.addEventListener("keydown", event => {
 });
 
 tampilkanKegiatan();
+const formKontak = document.getElementById('formKontak');
+
+if (formKontak) {
+    formKontak.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const nama = document.getElementById('nama').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const pesan = document.getElementById('pesan').value.trim();
+
+        if (nama === '' || email === '' || pesan === '') {
+            alert('Harap isi semua kolom formulir!');
+            return;
+        }
+
+        alert('Terima kasih, pesan Anda berhasil dikirim!');
+        formKontak.reset();
+    });
+}

@@ -63,8 +63,40 @@ body.gelap .card { background-color: #1c2538; border-color: #33415c; }
   .menu { gap: 14px; } 
 } 
   
-/* ===== BAGIAN MAHASISWA 2 (Beranda) ===== */ 
-  
-/* ===== BAGIAN MAHASISWA 3 (Profil dan Kegiatan) ===== */ 
+/* ===== BAGIAN MAHASISWA 2 (Profile) ===== */ 
+
+
+
+.profil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.profil-teks {
+    flex: 1;
+    text-align: justify;
+}
+
+.profil-image {
+    flex: 120px;
+    width: 120px;
+}
+
+.profil-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ===== BAGIAN MAHASISWA 3 (Kegiatan) ===== */ 
   
 /* ===== BAGIAN MAHASISWA 4 (Kontak) ===== */ 
