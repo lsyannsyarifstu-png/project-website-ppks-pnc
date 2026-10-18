@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan Kampus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-kegiatan">
+        <div class="container-kegiatan">
+            <h2>InfoKampus</h2>
+            <nav>
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil</a>
+                <a href="kegiatan.html" class="aktif">Kegiatan</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Judul -->
+    <section class="hero-kegiatan">
+        <div class="container-kegiatan">
+            <h1>Kegiatan Kampus</h1>
+            <p>
+                Temukan informasi kegiatan, seminar, lomba,
+                dan acara mahasiswa di lingkungan kampus.
+            </p>
+        </div>
+    </section>
+
+    <!-- Daftar Kegiatan -->
+    <section class="daftar-kegiatan">
+        <div class="container-kegiatan">
+            <h2>Daftar Kegiatan</h2>
+            <p class="deskripsi-kegiatan">
+                Cari kegiatan yang menarik dan sesuai minatmu.
+            </p>
+
+            <!-- Pencarian -->
+            <div class="filter-kegiatan">
+                <input
+                    type="text"
+                    id="cariKegiatan"
+                    placeholder="Cari nama kegiatan..."
+                >
+
+                <select id="kategoriKegiatan">
+                    <option value="semua">Semua Kategori</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="akademik">Akademik</option>
+                    <option value="organisasi">Organisasi</option>
+                    <option value="lomba">Lomba</option>
+                </select>
+            </div>
+
+            <!-- Kartu kegiatan dibuat oleh JavaScript -->
+            <div class="grid-kegiatan" id="daftarKegiatan"></div>
+
+            <p id="pesanKosong" class="pesan-kosong" hidden>
+                Kegiatan tidak ditemukan.
+            </p>
+        </div>
+    </section>
+
+    <!-- Modal Detail -->
+    <div id="modalKegiatan" class="modal-kegiatan" hidden>
+        <div class="isi-modal" role="dialog"
+             aria-modal="true" aria-labelledby="judulModal">
+            <button class="tutup-modal" id="tutupModal"
+                    aria-label="Tutup detail">&times;</button>
+            <h2 id="judulModal">Detail Kegiatan</h2>
+            <div id="detailKegiatan"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-kegiatan">
+        <p>&copy; 2026 InfoKampus. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="js/kegiatan.js"></script>
+</body>
+</html>
