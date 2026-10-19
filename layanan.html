@@ -1,39 +1,100 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layanan - PPKS</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan | Website Satgas PPKPT</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="layanan.html">Layanan</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-logo">
+      <div class="logo-text">
+        <h1 class="logo">Satgas PPKPT</h1>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kegiatan.html">Kegiatan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+    <button id="tombol-tema" type="button">Mode Gelap</button>
+  </header>
 
-    <main>
-        <section class="layanan-container">
-            <h2>Layanan Kami</h2>
-            <p>Satgas PPKS menyediakan berbagai bentuk layanan perlindungan dan pendampingan:</p>
-            <ul>
-                <li><strong>Pengaduan Kasus:</strong> Layanan pelaporan tindakan kekerasan seksual secara aman dan rahasia.</li>
-                <li><strong>Pendampingan Psikologis & Hukum:</strong> Bantuan profesional untuk korban selama proses penanganan.</li>
-                <li><strong>Edukasi & Sosialisasi:</strong> Program pencegahan dan peningkatan kesadaran di lingkungan kampus.</li>
-            </ul>
-        </section>
-    </main>
+  <!-- Konten Utama -->
+  <main>
+    <h2>Layanan Satgas PPKPT</h2>
+    <p class="subjudul-halaman">Satgas PPKPT Politeknik Negeri Cilacap menyediakan ruang aman serta pendampingan komprehensif bagi seluruh civitas akademika.</p>
 
-    <script src="js/script.js"></script>
-</body>
-<footer>
+    <!-- Daftar Layanan Utama -->
+    <section class="grid-card">
+      <div class="card">
+        <h3>1. Pengaduan & Pelaporan</h3>
+        <p>Layanan penerimaan laporan kekerasan baik secara daring maupun luring dengan jaminan kerahasiaan identitas korban dan saksi 100%.</p>
+      </div>
+
+      <div class="card">
+        <h3>2. Pendampingan & Konseling</h3>
+        <p>Bantuan psikologis awal dan konseling bersama tenaga ahli untuk membantu pemulihan kesehatan mental serta penanganan trauma korban.</p>
+      </div>
+
+      <div class="card">
+        <h3>3. Advokasi & Bantuan Hukum</h3>
+        <p>Pendampingan selama proses pemeriksaan internal kampus, perlindungan hak akademik korban, serta fasilitasi rujukan hukum jika dibutuhkan.</p>
+      </div>
+
+      <div class="card">
+        <h3>4. Edukasi & Sosialisasi</h3>
+        <p>Penyelenggaraan seminar, workshop, dan pelatihan berkala demi menumbuhkan budaya kampus yang saling menghargai dan bebas kekerasan.</p>
+      </div>
+    </section>
+
+    <!-- Alur Penanganan Kasus -->
+    <section class="alur-layanan">
+      <h3>Alur Penanganan Laporan</h3>
+      <div class="alur-grid">
+        <div class="alur-item">
+          <div class="nomor-alur">1</div>
+          <h4>Pelaporan</h4>
+          <p>Pelapor menyampaikan aduan melalui formulir kontak online atau datang langsung ke ruang Satgas.</p>
+        </div>
+        <div class="alur-item">
+          <div class="nomor-alur">2</div>
+          <h4>Verifikasi & Asesmen</h4>
+          <p>Tim Satgas memverifikasi data laporan dan mengidentifikasi kebutuhan mendesak bagi korban.</p>
+        </div>
+        <div class="alur-item">
+          <div class="nomor-alur">3</div>
+          <h4>Pemeriksaan & Rekomendasi</h4>
+          <p>Pemeriksaan dilakukan secara adil dan rekomendasi tindakan/sanksi diajukan kepada Direktur PNC.</p>
+        </div>
+        <div class="alur-item">
+          <div class="nomor-alur">4</div>
+          <h4>Pemulihan & Tindak Lanjut</h4>
+          <p>Pendampingan konseling serta pemantauan kondisi korban secara berkelanjutan pasca penanganan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kotak Aksi / Lapor -->
+    <div class="kotak-aksi">
+      <h3>Butuh Bantuan atau Ingin Melapor?</h3>
+      <p>Layanan kami bersifat gratis, rahasia, dan berpihak kepada keselamatan korban.</p>
+      <a href="kontak.html" class="btn-lapor">Hubungi Satgas PPKPT</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
     <p>&copy; 2026 Politeknik Negeri Cilacap</p>
   </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
