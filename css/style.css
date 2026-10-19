@@ -62,10 +62,10 @@ body.gelap .card { background-color: #1c2538; border-color: #33415c; }
   .navbar { flex-direction: column; } 
   .menu { gap: 14px; } 
 } 
-  
-/* ===== BAGIAN MAHASISWA 2 (Beranda) ===== */ 
 
-/* Judul beranda */
+/* ===== BAGIAN MAHASISWA 2 (Beranda dan Profil) ===== */ 
+
+/* beranda */
 h2 {
     text-align: center;
     margin: 30px 20px;
@@ -111,9 +111,8 @@ h2 {
     text-align: justify;
     line-height: 1.8;
 }
-/* ===== BAGIAN MAHASISWA 2 (Profile) ===== */ 
 
-
+/* profil*/ 
 
 .profil {
     display: flex;
@@ -144,7 +143,10 @@ h2 {
 }
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9d0bfaceb0d0b456138cecf588c0a638b4cb7336
 /* ===== BAGIAN MAHASISWA 3 (Kegiatan) ===== */ 
   
 /* ===== BAGIAN MAHASISWA 4 (Kontak) ===== */ 
